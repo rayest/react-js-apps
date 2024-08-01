@@ -1,0 +1,25 @@
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border: none;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  transition: transform 0.5s ease, width 0.5s ease;
+}
+
+.search-bar:focus {
+  width: 100%;
+}
+
+.search-bar::placeholder {
+  font-weight: 200;
+}
+
+.search-bar:focus::placeholder {
+  color: transparent;
+}
