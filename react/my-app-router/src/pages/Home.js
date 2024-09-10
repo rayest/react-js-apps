@@ -1,5 +1,6 @@
-import Feed from "./Feed";
+import Feed from "../services/Feed";
 import { useStoreState } from "easy-peasy";
+import "../assets/styles/home.css";
 
 const Home = ({ isLoading, fetchError }) => {
   const searchResults = useStoreState((state) => state.searchResults);

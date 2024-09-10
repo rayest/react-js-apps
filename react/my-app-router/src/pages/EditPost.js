@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useStoreState, useStoreActions } from "easy-peasy";
 
-import api from "./api/posts";
+
 import { format } from "date-fns";
 
 const EditPost = ({}) => {

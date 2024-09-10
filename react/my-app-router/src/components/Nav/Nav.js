@@ -5,6 +5,8 @@ import { useStoreState } from "easy-peasy";
 import { useStoreActions } from "easy-peasy";
 import { useEffect } from "react";
 
+import "./nav.css";
+
 const Nav = () => {
   const posts = useStoreState((state) => state.posts);
   const search = useStoreState((state) => state.search);

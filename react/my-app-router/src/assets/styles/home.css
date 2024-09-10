@@ -1,0 +1,8 @@
+.Home .post a {
+    text-decoration: none;
+}
+
+.Home .post a,
+.Home .post a:visited {
+    color: #000;
+}

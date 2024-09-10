@@ -1,6 +1,7 @@
 import { format } from "date-fns";
 import { useStoreState, useStoreActions } from "easy-peasy";
 import { useNavigate } from "react-router-dom";
+import "../assets/styles/newPost.css";
 
 const NewPost = ({}) => {
   const posts = useStoreState((state) => state.posts);

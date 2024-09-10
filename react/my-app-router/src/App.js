@@ -1,16 +1,20 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Nav from "./Nav";
-import Home from "./Home";
-import NewPost from "./NewPost";
-import PostPage from "./PostPage";
-import About from "./About";
-import Missing from "./Missing";
 import { Route, Routes } from "react-router-dom";
-import { useEffect } from "react";
-import useAxiosFetch from "./hooks/useAxiosFetch";
 import { useStoreActions } from "easy-peasy";
-import EditPost from "./EditPost";
+import { useEffect } from "react";
+
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Nav from "./components/Nav/Nav";
+
+import Home from "./pages/Home";
+import NewPost from "./pages/NewPost";
+import PostPage from "./pages/PostPage";
+import About from "./pages/About";
+import Missing from "./pages/Missing";
+import EditPost from "./pages/EditPost";
+
+import useAxiosFetch from "./hooks/useAxiosFetch";
+
 
 function App() {
   const setPosts = useStoreActions((actions) => actions.setPosts);
@@ -23,7 +27,7 @@ function App() {
   }, [data, setPosts]);
   return (
     <div className="App">
-      <Header title="React JS Blog" />
+      <Header title="平凡的托马斯" />
       <Nav />
       <Routes>
         <Route
