@@ -1,5 +1,6 @@
 import { createStore, action, thunk, computed } from "easy-peasy";
 import api from "../api/posts";
+import { set } from "date-fns";
 
 export default createStore({
   posts: [],
@@ -75,5 +76,15 @@ export default createStore({
     } catch (error) {
       console.log(`Error: ${error.message}`);
     }
+  }),
+
+  password: "",
+  setPassword: action((state, payload) => {
+    state.password = payload;
+  }),
+
+  phone: "",
+  setPhone: action((state, payload) => {
+    state.phone = payload;
   }),
 });

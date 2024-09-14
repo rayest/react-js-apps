@@ -12,6 +12,7 @@ import PostPage from "./pages/PostPage";
 import About from "./pages/About";
 import Missing from "./pages/Missing";
 import EditPost from "./pages/EditPost";
+import Login from "./pages/Login";
 
 import useAxiosFetch from "./hooks/useAxiosFetch";
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path="/edit/:id" element={<EditPost />} />
         <Route path="/post/:id" element={<PostPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Missing />} />
       </Routes>
       <Footer />

@@ -42,6 +42,7 @@ const Nav = () => {
           <Link to="/"> Home </Link>
           <Link to="/post"> Post </Link>
           <Link to="/about"> About </Link>
+          <Link to="/login"> Login </Link>
         </li>
       </ul>
     </nav>
